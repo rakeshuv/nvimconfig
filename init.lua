@@ -18,9 +18,8 @@ vim.opt.rtp:prepend(lazypath)
 require("core.options")
 require("core.keymaps")
 require("core.plugins")
-require("core.plugin_config")
+require("core.plugins.find_requirement")
 require'lspconfig'.clangd.setup{}
-require('telekasten').setup({ home = vim.fn.expand("~/zettelkasten"), })
 require('telescope').load_extension('media_files')
 
 ---- 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
